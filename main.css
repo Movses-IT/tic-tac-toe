@@ -1,64 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #121212;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 30px;
+}
 
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #00ffcc;
-  }
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
 
-  .board {
-    display: grid;
-    grid-template-columns: repeat(3, 120px);
-    grid-gap: 10px;
-    justify-content: center;
-    margin: 30px auto;
-  }
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 30px 0;
+}
 
-  .cell {
-    width: 120px;
-    height: 120px;
-    font-size: 3em;
-    cursor: pointer;
-    background: #1f1f1f;
-    color: #00ffcc;
-    border: 2px solid #333;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s, transform 0.2s;
-  }
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5em;
+  cursor: pointer;
+  background: #1f1f1f;
+  color: #00ffcc;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
+}
 
-  .cell:hover {
-    background: #292929;
-    transform: scale(1.05);
-  }
+.cell:hover {
+  background: #292929;
+  transform: scale(1.05);
+}
 
-  button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1em;
-    background: #00ffcc;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1em;
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-  button:hover {
-    background: #00ccaa;
-  }
+button:hover {
+  background: #00ccaa;
+}
 
-  #result {
-    font-size: 1.5em;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #ff8080;
-  }
+#result {
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff8080;
+}
